@@ -23,14 +23,6 @@
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
-				<extensions>true</extensions>
-				<configuration>
-				</configuration>
-			</plugin>
-			<plugin>
-				<groupId>org.mule.tools.maven</groupId>
-				<artifactId>mule-maven-plugin</artifactId>
 				<version>3.3.5</version>
 				<extensions>true</extensions>
 				<configuration>
@@ -42,25 +34,10 @@
 						<applicationName>mulesoft-cicd-sample1</applicationName>
 						<environment>Sandbox</environment>
 						<workerType>MICRO</workerType>
+						<objectStoreV2>true</objectStoreV2>
 					</cloudHubDeployment>
 				</configuration>
-				<executions>
-               <execution>
-                  <id>deploy</id>
-                  <phase>deploy</phase>
-                  <goals>
-                     <goal>deploy</goal>
-                  </goals>
-               </execution>
-            </executions>
 			</plugin>
-			<plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-deploy-plugin</artifactId>
-            <configuration>
-               <skip>true</skip>
-            </configuration>
-         </plugin>
 		</plugins>
 	</build>
 
@@ -103,6 +80,10 @@
                 <enabled>false</enabled>
             </snapshots>
         </pluginRepository>
+		<pluginRepository>
+    <id>mule-public</id>
+    <url>https://repository.mulesoft.org/nexus/content/repositories/releases</url>
+  </pluginRepository>
     </pluginRepositories>
 
 </project>
