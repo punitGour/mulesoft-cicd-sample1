@@ -41,6 +41,7 @@
 						<password>Arpit@123</password>
 						<applicationName>mulesoft-cicd-sample1</applicationName>
 						<environment>Sandbox</environment>
+						<workerType>MICRO</workerType>
 					</cloudHubDeployment>
 				</configuration>
 				<executions>
