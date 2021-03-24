@@ -9,14 +9,14 @@ pipeline {
 
  
     stages {
-        stage("git pull"){
-            steps{
+       // stage("git pull"){
+         //   steps{
                 //git 'https://github.com/ForeverNewAWS/forevernew-wh-orders-api-v2'
-                git branch: 'main',
-                credentialsId: 'githubcred',
-                url: 'https://github.com/punitGour/jenkinsDemo.git'
-            }
-        }
+           //     git branch: 'main',
+             //   credentialsId: 'githubcred',
+               // url: 'https://github.com/punitGour/jenkinsDemo.git'
+            // }
+       // }
         stage('build with parameter'){
             steps {
                 script{
