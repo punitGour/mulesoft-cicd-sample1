@@ -20,7 +20,7 @@ pipeline {
         stage('build with parameter'){
             steps {
                 script{
-                    properties([parameters([[$class: 'ChoiceParameter', choiceType: 'PT_SINGLE_SELECT', description: '', filterLength: 1, filterable: false, name: 'env', randomName: 'choice-parameter-4017106827748', fallbackScript: [classpath: [], sandbox: false, script: 'return [ \'select parameter\']'], script: [$class: 'GroovyScript', script: [classpath: [], sandbox: false, script: '''return [
+                    properties([parameters([[$class: 'ChoiceParameter', choiceType: 'PT_SINGLE_SELECT', description: '', filterLength: 1, filterable: false, name: 'env', randomName: 'choice-parameter-4017106827748', script: [classpath: [], sandbox: false, script: '''return [
 \'DEV\' ,
 \'UAT\' ,
 \'PROD\'
