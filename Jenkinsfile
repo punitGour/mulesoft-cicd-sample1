@@ -20,7 +20,7 @@ pipeline {
         stage('build with parameter'){
             steps {
                 script{
-                    properties([parameters([[$class: 'ChoiceParameter', choiceType: 'PT_SINGLE_SELECT', description: '', filterLength: 1, filterable: false, name: 'env', randomName: 'choice-parameter-4017106827748', script: [classpath: [], sandbox: false, script: '''return [
+              properties([parameters([[$class: 'ChoiceParameter', choiceType: 'PT_SINGLE_SELECT', filterLength: 1, filterable: false, name: 'env', randomName: 'choice-parameter-13054209196099', script: [$class: 'GroovyScript', fallbackScript: [classpath: [], sandbox: false, script: ''], script: [classpath: [], sandbox: false, script: '''return [
 \'DEV\' ,
 \'UAT\' ,
 \'PROD\'
@@ -39,7 +39,7 @@ return ["PROD"]
 }
 else {
     return ["select parameter from dropdown"]
-    }''']]])])
+    }''']]]]), pipelineTriggers([<object of type org.jenkinsci.plugins.ghprb.GhprbTrigger>])])
                 }
             }
         }
