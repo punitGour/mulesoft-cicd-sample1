@@ -12,4 +12,4 @@ echo $core
 echo $version
 echo $fx4
 
-sh 'anypoint-cli --username="pradeepbo" --password="Cybage123" --environment=$env runtime-mgr cloudhub-application modify --runtime $version --workerSize $WORKERSIZE_ENV --property $PROPERTY_ENV $APP_NAME_ENV "/var/lib/jenkins/workspace/forevernew-build-param-24/target/mulesoft-cicd-sample1-1.0.0-SNAPSHOT-mule-application.jar"'
+sh 'anypoint-cli'
