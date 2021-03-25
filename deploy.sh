@@ -1,4 +1,4 @@
-fx=`cat cloud.deployment | grep '${CloudhubEnv}'`
+fx=`cat cloud.deployment | grep '$1'`
 for filename in $fx
 do
 fx1=`echo $filename | cut -f1 -d ','`
