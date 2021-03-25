@@ -1,0 +1,5 @@
+env,core,version,etc
+
+DEV,1,3.9.4,xxx
+
+PROD,1,3.9.4,xxx
