@@ -13,4 +13,4 @@ echo $core
 echo $version
 echo $fx4
 
-sh 'anypoint-cli'
+anypoint-cli
