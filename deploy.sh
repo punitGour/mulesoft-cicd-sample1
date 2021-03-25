@@ -1,3 +1,4 @@
+#!/bin/bash
 fx=`cat cloud.deployment | grep $1`
 for filename in $fx
 do
