@@ -7,7 +7,6 @@ env=`echo $filename | cut -f1 -d ','`
 core=`echo $filename | cut -f2 -d ','`
 version=`echo $filename | cut -f3 -d ','`
 property=`echo $filename | cut -f4 -d ','`
-AppName=`echo $filename | cut -f5 -d ','`
 done
 
 
