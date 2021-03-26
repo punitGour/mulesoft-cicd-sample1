@@ -9,7 +9,13 @@ version=`echo $filename | cut -f3 -d ','`
 property=`echo $filename | cut -f4 -d ','`
 done
 
-FILE= "/var/lib/jenkins/workspace/forever-new/target/*.jar"
+ echo 'find /var/lib/jenkins/workspace/forever-new/target/ -type f -name '*.jar''
+
+
+FILENAME= echo 'find /var/lib/jenkins/workspace/forever-new/target/ -type f -name '*.jar''
+
+
+FILE= echo '/var/lib/jenkins/workspace/forever-new/target/$FILENAME'
 
 echo $env
 echo $core
