@@ -9,8 +9,6 @@ version=`echo $filename | cut -f3 -d ','`
 property=`echo $filename | cut -f4 -d ','`
 done
 
- find /var/lib/jenkins/workspace/forever-new/target/ -type f -name 'mulesoft*.jar'
-
 
 FILENAME= find /var/lib/jenkins/workspace/forever-new/target/ -type f -name 'mulesoft*.jar'
 
