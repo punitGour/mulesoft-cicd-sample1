@@ -21,4 +21,4 @@ anypoint-cli --username=$2 --password=$3 --environment=$env runtime-mgr cloudhub
 
 sleep 5m
 
-anypoint-cli --username=$2 --password=$3 --environment=$env runtime-mgr cloudhub-application describe hello-world-deploy-tutorial
+anypoint-cli --username=$2 --password=$3 --environment=$env runtime-mgr cloudhub-application describe $4
