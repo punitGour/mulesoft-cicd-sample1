@@ -14,4 +14,4 @@ echo $core
 echo $version
 echo $fx4
 
-anypoint-cli --username="pradeepbo" --password="Cybage123" --environment="dev" runtime-mgr cloudhub-application modify --runtime "4.2.2" --workerSize "0.2" "helloworld-pradeep123" "/var/lib/jenkins/workspace/forever-new/target/mulesoft-cicd-sample1-1.0.0-SNAPSHOT-mule-application.jar"
+anypoint-cli --username="pradeepbo" --password="Cybage123" --environment="Sandbox" runtime-mgr cloudhub-application modify --runtime "4.2.2" --workerSize "0.2" "helloworld-pradeep123" "/var/lib/jenkins/workspace/forever-new/target/mulesoft-cicd-sample1-1.0.0-SNAPSHOT-mule-application.jar"
