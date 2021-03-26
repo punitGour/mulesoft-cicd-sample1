@@ -10,10 +10,11 @@ property=`echo $filename | cut -f4 -d ','`
 done
 
 
-FILENAME= find /var/lib/jenkins/workspace/forever-new/target/ -type f -name 'mulesoft*.jar'
+FILENAME= `find /var/lib/jenkins/workspace/forever-new/target/ -type f -name 'mulesoft*.jar'`
 
+echo '${FILENAME}'
 
-FILE= '/var/lib/jenkins/workspace/forever-new/target/$FILENAME'
+FILE= echo '/var/lib/jenkins/workspace/forever-new/target/${FILENAME}'
 
 echo $env
 echo $core
