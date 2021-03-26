@@ -15,7 +15,7 @@ done
 FILENAME= find /var/lib/jenkins/workspace/forever-new/target/ -type f -name 'mulesoft*.jar'
 
 
-FILE= '/var/lib/jenkins/workspace/forever-new/target/${FILENAME}'
+FILE= '/var/lib/jenkins/workspace/forever-new/target/$FILENAME'
 
 echo $env
 echo $core
