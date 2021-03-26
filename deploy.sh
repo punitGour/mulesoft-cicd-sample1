@@ -18,3 +18,7 @@ echo $version
 echo $property
 
 anypoint-cli --username=$2 --password=$3 --environment=$env runtime-mgr cloudhub-application deploy --runtime $version --workerSize $core $4 /var/lib/jenkins/workspace/forever-new/target/*.jar||anypoint-cli --username=$2 --password=$3 --environment=$env runtime-mgr cloudhub-application modify --runtime $version --workerSize $core $4 /var/lib/jenkins/workspace/forever-new/target/*.jar
+
+sleep 5m
+
+anypoint-cli --username=$2 --password=$3 --environment=$env runtime-mgr cloudhub-application describe hello-world-deploy-tutorial
