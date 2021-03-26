@@ -12,13 +12,10 @@ done
 
 FILENAME= `find /var/lib/jenkins/workspace/forever-new/target/ -type f -name 'mulesoft*.jar'`
 
-echo '${FILENAME}'
-
-FILE= echo '/var/lib/jenkins/workspace/forever-new/target/${FILENAME}'
 
 echo $env
 echo $core
 echo $version
 echo $property
 
-anypoint-cli --username=$2 --password=$3 --environment=$env runtime-mgr cloudhub-application deploy --runtime $version --workerSize $core $4 $FILE||anypoint-cli --username=$2 --password=$3 --environment=$env runtime-mgr cloudhub-application modify --runtime $version --workerSize $core $4 $FILE
+anypoint-cli --username=$2 --password=$3 --environment=$env runtime-mgr cloudhub-application deploy --runtime $version --workerSize $core $4 $FILE||anypoint-cli --username=$2 --password=$3 --environment=$env runtime-mgr cloudhub-application modify --runtime $version --workerSize $core $4 $FILENAME
