@@ -1,9 +1,9 @@
-env,core,version,property
+env,core,version,property,AppName
 
-DEV,1,3.9.4,mule.env:dev
+DEV,1,3.9.4,mule.env:dev,mulesoft-cicd-sample1-1.0.0-SNAPSHOT-mule-application.jar
 
-PROD,1,3.9.4,mule.env:prod
+PROD,1,3.9.4,mule.env:prod,mulesoft-cicd-sample1-1.0.0-SNAPSHOT-mule-application.jar
 
-Sandbox,0.2,4.2.2,mule.env:dev
+Sandbox,0.2,4.2.2,mule.env:dev,mulesoft-cicd-sample1-1.0.0-SNAPSHOT-mule-application.jar
 
 
