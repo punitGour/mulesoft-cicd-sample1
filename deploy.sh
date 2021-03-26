@@ -21,8 +21,8 @@ echo 'Deploying to CloudHub'
 
 anypoint-cli --username=$2 --password=$3 --environment=$env runtime-mgr cloudhub-application deploy --runtime $version --workerSize $core $4 /var/lib/jenkins/workspace/forever-new/target/*.jar||anypoint-cli --username=$2 --password=$3 --environment=$env runtime-mgr cloudhub-application modify --runtime $version --workerSize $core $4 /var/lib/jenkins/workspace/forever-new/target/*.jar
 
-echo 'checking status of application'
+echo 'checking application deployment status'
 
-sleep 5m
+sleep 3m
 
 anypoint-cli --username=$2 --password=$3 --environment=$env runtime-mgr cloudhub-application describe $4
