@@ -1,8 +1,8 @@
 env,core,version,property
 
-DEV,1,3.9.4,mule.env:dev
+DEV,0.2,4.2.2,mule.env:dev
 
-PROD,1,3.9.4,mule.env:prod
+PROD,0.2,4.2.2,mule.env:prod
 
 Sandbox,0.2,4.2.2,mule.env:dev
 
