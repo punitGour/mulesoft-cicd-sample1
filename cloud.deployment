@@ -2,7 +2,7 @@ env,core,version,property
 
 DEV,0.2,4.2.2,mule.env:dev
 
-PROD,0.2,4.2.2,mule.env:prod
+PROD,0.1,4.2.2,mule.env:prod
 
 Sandbox,0.2,4.2.2,mule.env:dev
 
